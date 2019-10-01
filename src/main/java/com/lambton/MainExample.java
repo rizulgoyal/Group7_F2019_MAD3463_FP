@@ -6,7 +6,7 @@ public class MainExample {
 
 
         PartTime p1 = new PartTime(1,"Rizul",21, (float) 15.4,23);
-        
+        p1.printMyData();
 
 
     }
