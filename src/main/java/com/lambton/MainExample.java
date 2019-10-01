@@ -14,7 +14,21 @@ public class MainExample {
                 15);
             p1.printMyData();
 
+            FixedBasedPartTime p2 = new FixedBasedPartTime(2,
+                    "Anmol",
+                    22,
+                    (float)14.5,
+                    40,
+                    150);
+            p2.printMyData();
+
+
+
+
+            }
+
+
 
 
     }
-}
+
