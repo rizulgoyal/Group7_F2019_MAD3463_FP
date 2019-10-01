@@ -31,6 +31,11 @@ public class FullTime extends Employee implements IPrintable {
 
     @Override
     public float calcEarnings() {
-        return 0;
+        float totalSalary = salary+bonus;
+        return totalSalary;
+
     }
+
+
+    
 }
