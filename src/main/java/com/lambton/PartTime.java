@@ -1,6 +1,6 @@
 package com.lambton;
 
-public class PartTime extends Employee implements IPrintable{
+public abstract class PartTime extends Employee implements IPrintable{
 
 
 
