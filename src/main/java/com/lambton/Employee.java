@@ -46,16 +46,13 @@ public abstract class Employee {
 
         LocalDate now = LocalDate.now();
         int currentYear= now.getYear();
-        this.BirthYear=currentYear-this.employeeAge;
-        return this.BirthYear;
-
-
-
-    }
-
-    public int getBirthYear() {
+        BirthYear=currentYear-employeeAge;
         return BirthYear;
+
+
+
     }
+
 
     public abstract void calcEarnings();
 
