@@ -10,10 +10,20 @@ public class Intern extends Employee implements IPrintable {
         super(employeeID, employeeName, employeeAge);
         this.school = school;
     }
-    
+
 
     @Override
     public float calcEarnings() {
         return 0;
+    }
+
+    @Override
+    public void printMyData() {
+        super.printMyData();
+        System.out.println("Employee is Intern ");
+        System.out.println("School Name: " + school);
+        System.out.println("Bonus: " + bonus);
+        System.out.println("Total Earnings: " + calcEarnings());
+
     }
 }
