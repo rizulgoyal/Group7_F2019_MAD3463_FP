@@ -39,8 +39,6 @@ public abstract class PartTime extends Employee implements IPrintable{
     public void printMyData() {
 
         super.printMyData();
-
-        System.out.println("Employee is PartTime");
         System.out.println("Rate: " + rate);
         System.out.println("Hours Worked: " + hoursWorked);
 

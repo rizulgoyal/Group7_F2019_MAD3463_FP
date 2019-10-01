@@ -11,6 +11,10 @@ public class FixedBasedPartTime extends PartTime implements IPrintable {
 
     @Override
     public float calcEarnings() {
-        return 0;
+
+        float salary = this.getRate() * this.getHoursWorked();
+        float totalSalary = fixedAmount+salary;
+        return totalSalary;
     }
+
 }
