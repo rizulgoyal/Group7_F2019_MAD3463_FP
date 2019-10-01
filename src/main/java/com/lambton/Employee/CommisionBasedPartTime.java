@@ -23,6 +23,8 @@ public class CommisionBasedPartTime extends PartTime implements IPrintable {
         this.commisionPercentage = commisionPercentage;
     }
 
+
+    //override abstract function to calculate salary
     @Override
     public float calcEarnings() {
 

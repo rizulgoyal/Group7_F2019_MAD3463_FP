@@ -13,7 +13,7 @@ public class Intern extends Employee implements IPrintable {
         this.schoolName = school;
     }
 
-
+    //override abstract function to calculate salary
     @Override
     public float calcEarnings() {
         return 0;

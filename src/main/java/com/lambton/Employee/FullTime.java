@@ -33,6 +33,8 @@ public class FullTime extends Employee implements IPrintable {
         this.bonus = (int) bonus;
     }
 
+
+    //override abstract function to calculate salary
     @Override
     public float calcEarnings() {
         float totalSalary = salary+bonus;
