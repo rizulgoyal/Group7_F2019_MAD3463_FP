@@ -1,5 +1,9 @@
 package com.lambton;
 
+import com.lambton.Employee.CommisionBasedPartTime;
+import com.lambton.Employee.FixedBasedPartTime;
+import com.lambton.Employee.FullTime;
+
 public class MainExample {
 
     public static void main(String[] args) {
@@ -21,6 +25,13 @@ public class MainExample {
                     40,
                     150);
             p2.printMyData();
+
+        FullTime p3 = new FullTime(3,
+                "Harpreet",
+                28,
+                1000,
+                250);
+        p3.printMyData();
 
 
 

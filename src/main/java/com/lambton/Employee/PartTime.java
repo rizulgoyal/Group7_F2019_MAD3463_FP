@@ -1,6 +1,9 @@
-package com.lambton;
+package com.lambton.Employee;
 
-public abstract class PartTime extends Employee implements IPrintable{
+import com.lambton.Employee.Employee;
+import com.lambton.IPrintable;
+
+public abstract class PartTime extends Employee implements IPrintable {
 
 
 

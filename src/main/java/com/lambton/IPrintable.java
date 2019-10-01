@@ -1,5 +1,7 @@
 package com.lambton;
 
 public interface IPrintable {
-    void printMyData();
+    default void printMyData() {
+
+    }
 }
