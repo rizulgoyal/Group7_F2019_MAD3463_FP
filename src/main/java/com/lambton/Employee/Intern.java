@@ -4,11 +4,11 @@ import com.lambton.IPrintable;
 
 public class Intern extends Employee implements IPrintable {
 
-    String school;
+    String schoolName;
 
     public Intern(int employeeID, String employeeName, int employeeAge, String school) {
         super(employeeID, employeeName, employeeAge);
-        this.school = school;
+        this.schoolName = school;
     }
 
 
@@ -21,9 +21,7 @@ public class Intern extends Employee implements IPrintable {
     public void printMyData() {
         super.printMyData();
         System.out.println("Employee is Intern ");
-        System.out.println("School Name: " + school);
-        System.out.println("Bonus: " + bonus);
-        System.out.println("Total Earnings: " + calcEarnings());
+        System.out.println("School Name: " + schoolName);
 
     }
 }
