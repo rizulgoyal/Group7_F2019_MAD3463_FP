@@ -15,10 +15,9 @@ public class PartTime extends Employee {
 
     @Override
 
-    public void calcEarnings() {
-
-
-
+    public float calcEarnings() {
+        totalSalary=rate*hoursWorked;
+        return totalSalary;
 
     }
 

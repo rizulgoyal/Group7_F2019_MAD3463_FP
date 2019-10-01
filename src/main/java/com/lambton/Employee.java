@@ -54,7 +54,7 @@ public abstract class Employee {
     }
 
 
-    public abstract void calcEarnings();
+    public abstract float calcEarnings();
 
 
 
