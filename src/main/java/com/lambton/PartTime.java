@@ -1,6 +1,6 @@
 package com.lambton;
 
-public class PartTime extends Employee implements IPrintable{
+public abstract class PartTime extends Employee implements IPrintable{
 
 
 
@@ -30,24 +30,15 @@ public class PartTime extends Employee implements IPrintable{
         this.hoursWorked = hoursWorked;
     }
 
-    @Override
 
-    public float calcEarnings() {
-        float totalSalary = rate * hoursWorked;
-        return totalSalary;
 
-    }
+
 
 
     @Override
     public void printMyData() {
-
         super.printMyData();
 
-        System.out.println("Employee is PartTime");
-        System.out.println("Rate: " + rate);
-        System.out.println("Hours Worked: " + hoursWorked);
-        System.out.println("Earnings: " + calcEarnings());
 
     }
 }

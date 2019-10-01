@@ -5,9 +5,30 @@ public class MainExample {
     public static void main(String[] args) {
 
 
-        PartTime p1 = new PartTime(1,"Rizul",21, (float) 15.4,23);
-        
+        CommisionBasedPartTime p1 = new CommisionBasedPartTime(
+                1,
+                "Rizul",
+                25,
+                (float)15.45,
+                23,
+                15);
+            p1.printMyData();
+
+            FixedBasedPartTime p2 = new FixedBasedPartTime(2,
+                    "Anmol",
+                    22,
+                    (float)14.5,
+                    40,
+                    150);
+            p2.printMyData();
+
+
+
+
+            }
+
+
 
 
     }
-}
+

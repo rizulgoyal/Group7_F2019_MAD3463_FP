@@ -57,7 +57,7 @@ public abstract class Employee implements IPrintable{
     public void printMyData() {
         System.out.println("ID: "+ getEmployeeID());
         System.out.println("Name: "+getEmployeeName());
-        System.out.println("Birth Year" + calcBirthYear());
+        System.out.println("Birth Year: " + calcBirthYear());
 
     }
 
