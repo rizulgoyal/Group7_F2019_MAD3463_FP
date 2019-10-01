@@ -22,6 +22,8 @@ public class FixedBasedPartTime extends PartTime implements IPrintable {
         return totalSalary;
     }
 
+
+    //overriding interface function
     @Override
     public void printMyData() {
 

@@ -19,6 +19,7 @@ public class Intern extends Employee implements IPrintable {
         return 0;
     }
 
+    //overriding interface function
     @Override
     public void printMyData() {
         super.printMyData();

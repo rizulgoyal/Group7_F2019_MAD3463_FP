@@ -40,7 +40,7 @@ public class FullTime extends Employee implements IPrintable {
 
     }
 
-
+    //overriding interface function
     @Override
     public void printMyData() {
         super.printMyData();

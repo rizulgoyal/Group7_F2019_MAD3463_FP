@@ -38,7 +38,7 @@ public abstract class PartTime extends Employee implements IPrintable {
 
 
 
-
+    //overriding interface function
     @Override
     public void printMyData() {
         super.printMyData();
