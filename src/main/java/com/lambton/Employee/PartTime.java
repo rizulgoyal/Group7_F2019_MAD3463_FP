@@ -6,10 +6,9 @@ import com.lambton.IPrintable;
 public abstract class PartTime extends Employee implements IPrintable {
 
 
-
+    // create variables for stroing values
     private float rate;
     private int hoursWorked;
-
 
     public PartTime(int employeeID, String employeeName, int employeeAge, float rate, int hoursWorked) {
         super(employeeID, employeeName, employeeAge);

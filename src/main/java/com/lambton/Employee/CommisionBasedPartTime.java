@@ -5,6 +5,8 @@ import com.lambton.IPrintable;
 
 public class CommisionBasedPartTime extends PartTime implements IPrintable {
 
+
+    // create variables for stroing values
     int commisionPercentage;
     // constructor to input all values
 

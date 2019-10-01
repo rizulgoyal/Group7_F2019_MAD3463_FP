@@ -4,6 +4,7 @@ import com.lambton.IPrintable;
 
 public class Intern extends Employee implements IPrintable {
 
+    // create variables for stroing values
     String schoolName;
 
     public Intern(int employeeID, String employeeName, int employeeAge, String school) {

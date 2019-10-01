@@ -4,6 +4,8 @@ import com.lambton.Employee.PartTime;
 import com.lambton.IPrintable;
 
 public class FixedBasedPartTime extends PartTime implements IPrintable {
+
+    // create variables for stroing values
     int fixedAmount;
 
 
