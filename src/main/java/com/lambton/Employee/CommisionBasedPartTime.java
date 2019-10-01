@@ -5,6 +5,8 @@ import com.lambton.IPrintable;
 
 public class CommisionBasedPartTime extends PartTime implements IPrintable {
 
+
+    // create variables for stroing values
     int commisionPercentage;
     // constructor to input all values
 
@@ -21,6 +23,8 @@ public class CommisionBasedPartTime extends PartTime implements IPrintable {
         this.commisionPercentage = commisionPercentage;
     }
 
+
+    //override abstract function to calculate salary
     @Override
     public float calcEarnings() {
 
@@ -32,6 +36,8 @@ public class CommisionBasedPartTime extends PartTime implements IPrintable {
 
         }
 
+
+    //overriding interface function
     @Override
     public void printMyData() {
 

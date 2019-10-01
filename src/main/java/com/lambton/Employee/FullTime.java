@@ -4,8 +4,12 @@ import com.lambton.IPrintable;
 
 public class FullTime extends Employee implements IPrintable {
 
+    // create variables for stroing values
+
     int salary;
     int bonus;
+
+    // constructor to input all values
 
     public FullTime(int employeeID, String employeeName, int employeeAge, float salary, float bonus) {
         super(employeeID, employeeName, employeeAge);
@@ -29,6 +33,8 @@ public class FullTime extends Employee implements IPrintable {
         this.bonus = (int) bonus;
     }
 
+
+    //override abstract function to calculate salary
     @Override
     public float calcEarnings() {
         float totalSalary = salary+bonus;
@@ -36,7 +42,7 @@ public class FullTime extends Employee implements IPrintable {
 
     }
 
-
+    //overriding interface function
     @Override
     public void printMyData() {
         super.printMyData();

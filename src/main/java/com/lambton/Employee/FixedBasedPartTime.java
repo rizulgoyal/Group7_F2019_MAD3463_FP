@@ -4,14 +4,18 @@ import com.lambton.Employee.PartTime;
 import com.lambton.IPrintable;
 
 public class FixedBasedPartTime extends PartTime implements IPrintable {
+
+    // create variables for stroing values
     int fixedAmount;
 
-
+    // constructor to input all values
     public FixedBasedPartTime(int employeeID, String employeeName, int employeeAge, float rate, int hoursWorked, int fixedAmount) {
         super(employeeID, employeeName, employeeAge, rate, hoursWorked);
         this.fixedAmount = fixedAmount;
     }
 
+
+    //override abstract function to calculate salary
     @Override
     public float calcEarnings() {
 
@@ -20,6 +24,8 @@ public class FixedBasedPartTime extends PartTime implements IPrintable {
         return totalSalary;
     }
 
+
+    //overriding interface function
     @Override
     public void printMyData() {
 
