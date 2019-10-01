@@ -13,7 +13,7 @@ public abstract class Employee implements IPrintable {
     private int employeeAge;
     private int BirthYear;
 
-
+    //constructor
     public Employee(int employeeID, String employeeName, int employeeAge) {
         this.employeeID = employeeID;
         this.employeeName = employeeName;
@@ -21,7 +21,7 @@ public abstract class Employee implements IPrintable {
     }
 
 
-
+    // getter and setter
     public int getEmployeeID() {
         return employeeID;
     }
