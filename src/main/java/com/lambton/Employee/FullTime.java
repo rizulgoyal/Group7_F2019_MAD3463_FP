@@ -4,13 +4,13 @@ import com.lambton.IPrintable;
 
 public class FullTime extends Employee implements IPrintable {
 
-    float salary;
-    float bonus;
+    int salary;
+    int bonus;
 
     public FullTime(int employeeID, String employeeName, int employeeAge, float salary, float bonus) {
         super(employeeID, employeeName, employeeAge);
-        this.salary = salary;
-        this.bonus = bonus;
+        this.salary = (int) salary;
+        this.bonus = (int) bonus;
     }
 
     public float getSalary() {
@@ -18,7 +18,7 @@ public class FullTime extends Employee implements IPrintable {
     }
 
     public void setSalary(float salary) {
-        this.salary = salary;
+        this.salary = (int) salary;
     }
 
     public float getBonus() {
@@ -26,7 +26,7 @@ public class FullTime extends Employee implements IPrintable {
     }
 
     public void setBonus(float bonus) {
-        this.bonus = bonus;
+        this.bonus = (int) bonus;
     }
 
     @Override
@@ -37,5 +37,12 @@ public class FullTime extends Employee implements IPrintable {
     }
 
 
-    
+    @Override
+    public void printMyData() {
+        super.printMyData();
+        System.out.println("Employee is Full Time ");
+        System.out.println("Salary: " + salary);
+        System.out.println("Bonus: " + bonus);
+        System.out.println("Total Earnings: " + calcEarnings());
+    }
 }
