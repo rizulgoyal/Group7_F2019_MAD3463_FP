@@ -14,6 +14,8 @@ public class FixedBasedPartTime extends PartTime implements IPrintable {
         this.fixedAmount = fixedAmount;
     }
 
+
+    //override abstract function to calculate salary
     @Override
     public float calcEarnings() {
 
