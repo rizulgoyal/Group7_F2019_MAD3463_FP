@@ -1,4 +1,6 @@
 package com.lambton.Employee;
 
-public class Intern {
+import com.lambton.IPrintable;
+
+public class Intern extends Employee implements IPrintable {
 }
