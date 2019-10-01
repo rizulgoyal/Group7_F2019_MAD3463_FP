@@ -2,17 +2,17 @@ package com.lambton;
 
 import java.time.LocalDate;
 
-public abstract class Employee {
+public abstract class Employee implements IPrintable{
 
     //declare variables
 
     private int employeeID;
-    private char employeeName;
+    private String employeeName;
     private int employeeAge;
     private int BirthYear;
 
 
-    public Employee(int employeeID, char employeeName, int employeeAge) {
+    public Employee(int employeeID, String employeeName, int employeeAge) {
         this.employeeID = employeeID;
         this.employeeName = employeeName;
         this.employeeAge = employeeAge;
@@ -28,11 +28,11 @@ public abstract class Employee {
         this.employeeID = employeeID;
     }
 
-    public char getEmployeeName() {
+    public String getEmployeeName() {
         return employeeName;
     }
 
-    public void setEmployeeName(char employeeName) {
+    public void setEmployeeName(String employeeName) {
         this.employeeName = employeeName;
     }
 
@@ -53,6 +53,13 @@ public abstract class Employee {
 
     }
 
+    @Override
+    public void printMyData() {
+        System.out.println("ID: "+ getEmployeeID());
+        System.out.println("Name: "+getEmployeeName());
+        System.out.println("Birth Year" + calcBirthYear());
+
+    }
 
     public abstract float calcEarnings();
 
