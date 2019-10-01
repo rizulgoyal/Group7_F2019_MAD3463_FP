@@ -1,4 +1,4 @@
 package com.lambton;
 
-public class FixedBasedPartTime {
+public class FixedBasedPartTime extends PartTime implements IPrintable {
 }
