@@ -10,6 +10,8 @@ public abstract class PartTime extends Employee implements IPrintable {
     private float rate;
     private int hoursWorked;
 
+
+    // constructor to input all values
     public PartTime(int employeeID, String employeeName, int employeeAge, float rate, int hoursWorked) {
         super(employeeID, employeeName, employeeAge);
         this.rate = rate;

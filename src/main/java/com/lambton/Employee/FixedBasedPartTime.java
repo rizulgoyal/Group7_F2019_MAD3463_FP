@@ -8,7 +8,7 @@ public class FixedBasedPartTime extends PartTime implements IPrintable {
     // create variables for stroing values
     int fixedAmount;
 
-
+    // constructor to input all values
     public FixedBasedPartTime(int employeeID, String employeeName, int employeeAge, float rate, int hoursWorked, int fixedAmount) {
         super(employeeID, employeeName, employeeAge, rate, hoursWorked);
         this.fixedAmount = fixedAmount;
