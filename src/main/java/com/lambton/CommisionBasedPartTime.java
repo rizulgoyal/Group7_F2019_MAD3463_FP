@@ -28,7 +28,14 @@ public class CommisionBasedPartTime extends PartTime implements IPrintable{
 
         }
 
-    
+    @Override
+    public void printMyData() {
+
+        super.printMyData();
+        System.out.println("Commision Percentage: " + commisionPercentage);
+        System.out.println("Total Earnings: " + calcEarnings());
+
+    }
 
 
     }
