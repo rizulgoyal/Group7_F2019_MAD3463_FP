@@ -16,4 +16,20 @@ public class CommisionBasedPartTime extends PartTime implements IPrintable{
     public void setCommisionPercentage(int commisionPercentage) {
         this.commisionPercentage = commisionPercentage;
     }
-}
+
+    @Override
+    public float calcEarnings() {
+
+
+            float salary = this.getRate() * this.getHoursWorked();
+            float commision = salary * commisionPercentage/100;
+            float totalSalary = commision+salary;
+            return totalSalary;
+
+        }
+
+    
+
+
+    }
+
