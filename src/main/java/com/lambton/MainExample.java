@@ -1,5 +1,8 @@
 package com.lambton;
 
+import com.lambton.Employee.CommisionBasedPartTime;
+import com.lambton.Employee.FixedBasedPartTime;
+
 public class MainExample {
 
     public static void main(String[] args) {

@@ -1,4 +1,7 @@
-package com.lambton;
+package com.lambton.Employee;
+
+import com.lambton.Employee.PartTime;
+import com.lambton.IPrintable;
 
 public class FixedBasedPartTime extends PartTime implements IPrintable {
     int fixedAmount;

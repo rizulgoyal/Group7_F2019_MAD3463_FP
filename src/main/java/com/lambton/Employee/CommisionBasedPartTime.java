@@ -1,6 +1,9 @@
-package com.lambton;
+package com.lambton.Employee;
 
-public class CommisionBasedPartTime extends PartTime implements IPrintable{
+import com.lambton.Employee.PartTime;
+import com.lambton.IPrintable;
+
+public class CommisionBasedPartTime extends PartTime implements IPrintable {
 
     int commisionPercentage;
     // constructor to input all values
