@@ -31,10 +31,11 @@ public class CommisionBasedPartTime extends PartTime implements IPrintable{
 
     @Override
     public void printMyData() {
-        System.out.println("Employee is PartTime/Commision Based ");
-        super.printMyData();
-        // print data from parttime class with super function
 
+        super.printMyData();
+        System.out.println("Employee is PartTime/Commision Based ");
+        System.out.println("Rate: " + this.getRate());
+        System.out.println("Hours Worked: " + this.getHoursWorked());
         System.out.println("Commision Percentage: " + commisionPercentage);
         System.out.println("Total Earnings: " + calcEarnings());
 

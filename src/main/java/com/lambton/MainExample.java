@@ -12,7 +12,7 @@ public class MainExample {
                 (float)15.45,
                 23,
                 15);
-
+            p1.printMyData();
 
 
 
