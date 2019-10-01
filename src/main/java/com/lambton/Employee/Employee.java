@@ -43,6 +43,7 @@ public abstract class Employee implements IPrintable {
         this.employeeAge = employeeAge;
     }
 
+   // function to calculate year of birth
     public int calcBirthYear()
     {
 
@@ -54,7 +55,7 @@ public abstract class Employee implements IPrintable {
 
 
     }
-
+    //overriding interface function
     @Override
     public void printMyData() {
         System.out.println("ID: "+ getEmployeeID());
