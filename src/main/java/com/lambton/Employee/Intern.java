@@ -8,11 +8,12 @@ public class Intern extends Employee implements IPrintable {
     String schoolName;
     int salary;
 
-    // constructor to input all values
-    public Intern(int employeeID, String employeeName, int employeeAge, String school) {
+    public Intern(int employeeID, String employeeName, int employeeAge, String schoolName, int salary) {
         super(employeeID, employeeName, employeeAge);
-        this.schoolName = school;
+        this.schoolName = schoolName;
+        this.salary = salary;
     }
+
 
     //override abstract function to calculate salary
     @Override
@@ -26,6 +27,7 @@ public class Intern extends Employee implements IPrintable {
         super.printMyData();
         System.out.println("Employee is Intern ");
         System.out.println("School Name: " + schoolName);
+        System.out.println("Salary :" + salary);
 
     }
 }

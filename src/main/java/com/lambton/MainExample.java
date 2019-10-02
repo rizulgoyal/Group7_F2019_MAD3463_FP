@@ -3,6 +3,7 @@ package com.lambton;
 import com.lambton.Employee.CommisionBasedPartTime;
 import com.lambton.Employee.FixedBasedPartTime;
 import com.lambton.Employee.FullTime;
+import com.lambton.Employee.Intern;
 
 public class MainExample {
 
@@ -33,6 +34,8 @@ public class MainExample {
                 250);
         p3.printMyData();
 
+        Intern p4 = new Intern(4,"Javed",35,"Saint Thomas", 1000);
+        p4.printMyData();
 
 
 
