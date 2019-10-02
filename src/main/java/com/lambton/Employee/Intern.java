@@ -28,6 +28,7 @@ public class Intern extends Employee implements IPrintable {
         super.printMyData();
         System.out.println("Employee is Intern ");
         System.out.println("School Name: " + schoolName);
+        // use exception handling on salary
         try{
             if(salary<500)
             {
