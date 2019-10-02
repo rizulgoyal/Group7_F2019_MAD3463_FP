@@ -6,7 +6,7 @@ public class Intern extends Employee implements IPrintable {
 
     // create variables for stroing values
     String schoolName;
-    
+    int salary;
 
     // constructor to input all values
     public Intern(int employeeID, String employeeName, int employeeAge, String school) {
