@@ -49,6 +49,6 @@ public class FullTime extends Employee implements IPrintable {
         System.out.println("Employee is Full Time ");
         System.out.println("Salary: " + salary);
         System.out.println("Bonus: " + bonus);
-        System.out.println("Total Earnings: " + calcEarnings());
+        System.out.println("Total Earnings: " + calcEarnings() + "S");
     }
 }
