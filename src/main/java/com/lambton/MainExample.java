@@ -34,7 +34,7 @@ public class MainExample {
                 250);
         p3.printMyData();
 
-        Intern p4 = new Intern(4,"Javed",35,"Saint Thomas", 400);
+        Intern p4 = new Intern(4,"Javed",35,"Saint Thomas", 800);
         p4.printMyData();
 
 
