@@ -4,14 +4,18 @@ public class Car extends Vehicle {
     //declaring variables
 
     private String carMaintainceCost;
+    private String insuranceCompany;
+    private Boolean insurance;
 
     //Constructor
 
-    public Car(String make, String plate, String insuranceCompany, float insuranceCost,String carMaintainceCost) {
-        super(make, plate, insuranceCompany, insuranceCost, );
+    public Car(String make, String plate, String carMaintainceCost, String insuranceCompany, Boolean insurance) {
+        super(make, plate);
         this.carMaintainceCost = carMaintainceCost;
-
+        this.insuranceCompany = insuranceCompany;
+        this.insurance = insurance;
     }
+
 
     //Getter and Setter
 
@@ -23,12 +27,26 @@ public class Car extends Vehicle {
         this.carMaintainceCost = carMaintainceCost;
     }
 
-    //Iprintable method is overloaded
+    public String getInsuranceCompany() {
+        return insuranceCompany;
+    }
+
+    public void setInsuranceCompany(String insuranceCompany) {
+        this.insuranceCompany = insuranceCompany;
+    }
+
+    public Boolean getInsurance() {
+        return insurance;
+    }
+
+    public void setInsurance(Boolean insurance) {
+        this.insurance = insurance;
+    }
+
+//Iprintable method is overloaded
 
 
     @Override
     public void printMyData() {
-        super.printMyData();
-        System.out.println("The ");
     }
 }
