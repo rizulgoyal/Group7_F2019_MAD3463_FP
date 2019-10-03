@@ -3,13 +3,13 @@ package com.lambton.Vehicle;
 public class Motorcycle extends Vehicle {
     //declaring variables
 
-    private String carMaintenanceCost;
+    private float carMaintenanceCost;
     private String insuranceCompany;
     private Boolean insurance;
 
     //constructor
 
-    public Motorcycle(int employeeID, String make, String plate, String carMaintenanceCost, String insuranceCompany, Boolean insurance) {
+    public Motorcycle(int employeeID, String make, String plate, float carMaintenanceCost, String insuranceCompany, Boolean insurance) {
         super(employeeID, make, plate);
         this.carMaintenanceCost = carMaintenanceCost;
         this.insuranceCompany = insuranceCompany;
@@ -20,11 +20,11 @@ public class Motorcycle extends Vehicle {
     //Getter and Setter
 
 
-    public String getCarMaintenanceCost() {
+    public float getCarMaintenanceCost() {
         return carMaintenanceCost;
     }
 
-    public void setCarMaintenanceCost(String carMaintenanceCost) {
+    public void setCarMaintenanceCost(float carMaintenanceCost) {
         this.carMaintenanceCost = carMaintenanceCost;
     }
 
@@ -50,8 +50,6 @@ public class Motorcycle extends Vehicle {
     @Override
     public void printMyData() {
         super.printMyData();
-        System.out.println("The Make is : " +this.getMake());
-        System.out.println("The Plate no is : "+this.getPlate());
         System.out.println("The Insurance Company name is : " +getInsuranceCompany());
         System.out.println("The Insurance is : "+getInsurance());
         System.out.println("The car maintaince cost is : "+ getCarMaintenanceCost());

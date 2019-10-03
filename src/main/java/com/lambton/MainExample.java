@@ -4,6 +4,7 @@ import com.lambton.Employee.CommisionBasedPartTime;
 import com.lambton.Employee.FixedBasedPartTime;
 import com.lambton.Employee.FullTime;
 import com.lambton.Employee.Intern;
+import com.lambton.Vehicle.Car;
 
 public class MainExample {
 
@@ -36,6 +37,8 @@ public class MainExample {
 
         Intern p4 = new Intern(4,"Javed",35,"Saint Thomas", 800);
         p4.printMyData();
+
+        Car p5 = new Car(1,"HONDA","ABCD 123",)
 
 
 
