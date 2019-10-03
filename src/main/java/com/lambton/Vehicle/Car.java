@@ -9,9 +9,9 @@ public class Car extends Vehicle {
 
     //Constructor
 
-    public Car(String make, String plate, String carMaintainceCost, String insuranceCompany, Boolean insurance) {
-        super(make, plate);
-        this.carMaintenanceCost = carMaintainceCost;
+    public Car(int employeeID, String make, String plate, String carMaintenanceCost, String insuranceCompany, Boolean insurance) {
+        super(employeeID, make, plate);
+        this.carMaintenanceCost = carMaintenanceCost;
         this.insuranceCompany = insuranceCompany;
         this.insurance = insurance;
     }
@@ -48,10 +48,15 @@ public class Car extends Vehicle {
 
     @Override
     public void printMyData() {
-        System.out.println("The Make is : " +this.getMake());
-        System.out.println("The Plate no is : "+this.getPlate());
+        super.printMyData();
         System.out.println("The Insurance Company name is : " +getInsuranceCompany());
         System.out.println("The Insurance is : "+getInsurance());
+        System.out.println("Maintenance Cost: " + carMaintenanceCost);
 
+    }
+
+    @Override
+    public float calcEarnings() {
+        return 0;
     }
 }
