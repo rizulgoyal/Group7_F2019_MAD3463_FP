@@ -5,6 +5,7 @@ import com.lambton.Employee.FixedBasedPartTime;
 import com.lambton.Employee.FullTime;
 import com.lambton.Employee.Intern;
 import com.lambton.Vehicle.Car;
+import com.lambton.Vehicle.Motorcycle;
 
 public class MainExample {
 
@@ -50,6 +51,8 @@ public class MainExample {
         {
             p1.printMyData();
         }
+        Motorcycle p6 = new Motorcycle(2,"Harley","CCSD 541",(float)254.12,"Scotia","True");
+        p6.printMyData();
 
 
 
