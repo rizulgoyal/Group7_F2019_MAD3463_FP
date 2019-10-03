@@ -3,7 +3,7 @@ package com.lambton.Vehicle;
 public class Car extends Vehicle {
     //declaring variables
 
-    private String carMaintainceCost;
+    private String carMaintenanceCost;
     private String insuranceCompany;
     private Boolean insurance;
 
@@ -11,7 +11,7 @@ public class Car extends Vehicle {
 
     public Car(String make, String plate, String carMaintainceCost, String insuranceCompany, Boolean insurance) {
         super(make, plate);
-        this.carMaintainceCost = carMaintainceCost;
+        this.carMaintenanceCost = carMaintainceCost;
         this.insuranceCompany = insuranceCompany;
         this.insurance = insurance;
     }
@@ -19,12 +19,12 @@ public class Car extends Vehicle {
 
     //Getter and Setter
 
-    public String getCarMaintainceCost() {
-        return carMaintainceCost;
+    public String getCarMaintenanceCost() {
+        return carMaintenanceCost;
     }
 
-    public void setCarMaintainceCost(String carMaintainceCost) {
-        this.carMaintainceCost = carMaintainceCost;
+    public void setCarMaintenanceCost(String carMaintenanceCost) {
+        this.carMaintenanceCost = carMaintenanceCost;
     }
 
     public String getInsuranceCompany() {

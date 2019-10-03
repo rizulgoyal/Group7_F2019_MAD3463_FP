@@ -1,8 +1,9 @@
 package com.lambton.Vehicle;
 
+import com.lambton.Employee.Employee;
 import com.lambton.IPrintable;
 
-public abstract class Vehicle implements IPrintable {
+public abstract class Vehicle extends Employee implements IPrintable {
 
     //declaring variables
     private String make;
@@ -11,11 +12,11 @@ public abstract class Vehicle implements IPrintable {
 
     // Constructor
 
-    public Vehicle(String make, String plate) {
+    public Vehicle(int employeeID,String make, String plate) {
+        super(employeeID);
         this.make = make;
         this.plate = plate;
     }
-
     // Getter and Setter
 
     public String getMake() {

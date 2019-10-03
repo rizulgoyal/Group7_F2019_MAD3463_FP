@@ -10,7 +10,7 @@ public class Intern extends Employee implements IPrintable {
     int salary;
 
     public Intern(int employeeID, String employeeName, int employeeAge, String schoolName, int salary) {
-        super(employeeID, employeeName, employeeAge);
+        super(employeeID);
         this.schoolName = schoolName;
         this.salary = salary;
     }
