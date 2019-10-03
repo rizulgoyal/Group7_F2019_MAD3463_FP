@@ -1,6 +1,5 @@
 package com.lambton.Employee;
 
-import com.lambton.Employee.Employee;
 import com.lambton.IPrintable;
 
 public abstract class PartTime extends Employee implements IPrintable {
@@ -13,7 +12,7 @@ public abstract class PartTime extends Employee implements IPrintable {
 
     // constructor to input all values
     public PartTime(int employeeID, String employeeName, int employeeAge, float rate, int hoursWorked) {
-        super(employeeID, employeeName, employeeAge);
+        super(employeeID);
         this.rate = rate;
         this.hoursWorked = hoursWorked;
     }

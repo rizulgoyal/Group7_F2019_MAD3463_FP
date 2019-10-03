@@ -12,7 +12,7 @@ public class FullTime extends Employee implements IPrintable {
     // constructor to input all values
 
     public FullTime(int employeeID, String employeeName, int employeeAge, float salary, float bonus) {
-        super(employeeID, employeeName, employeeAge);
+        super(employeeID);
         this.salary = (int) salary;
         this.bonus = (int) bonus;
     }

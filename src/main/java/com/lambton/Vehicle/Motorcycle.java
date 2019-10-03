@@ -3,15 +3,15 @@ package com.lambton.Vehicle;
 public class Motorcycle extends Vehicle {
     //declaring variables
 
-    private String carMaintainceCost;
+    private float carMaintenanceCost;
     private String insuranceCompany;
-    private Boolean insurance;
+    private String insurance;
 
     //constructor
 
-    public Motorcycle(String make, String plate, String carMaintainceCost, String insuranceCompany, Boolean insurance) {
-        super(make, plate);
-        this.carMaintainceCost = carMaintainceCost;
+    public Motorcycle(int employeeID, String make, String plate, float carMaintenanceCost, String insuranceCompany, String insurance) {
+        super(employeeID, make, plate);
+        this.carMaintenanceCost = carMaintenanceCost;
         this.insuranceCompany = insuranceCompany;
         this.insurance = insurance;
     }
@@ -20,12 +20,12 @@ public class Motorcycle extends Vehicle {
     //Getter and Setter
 
 
-    public String getCarMaintainceCost() {
-        return carMaintainceCost;
+    public float getCarMaintenanceCost() {
+        return carMaintenanceCost;
     }
 
-    public void setCarMaintainceCost(String carMaintainceCost) {
-        this.carMaintainceCost = carMaintainceCost;
+    public void setCarMaintenanceCost(float carMaintenanceCost) {
+        this.carMaintenanceCost = carMaintenanceCost;
     }
 
     public String getInsuranceCompany() {
@@ -36,11 +36,11 @@ public class Motorcycle extends Vehicle {
         this.insuranceCompany = insuranceCompany;
     }
 
-    public Boolean getInsurance() {
+    public String getInsurance() {
         return insurance;
     }
 
-    public void setInsurance(Boolean insurance) {
+    public void setInsurance(String insurance) {
         this.insurance = insurance;
     }
 
@@ -49,11 +49,28 @@ public class Motorcycle extends Vehicle {
 
     @Override
     public void printMyData() {
+        System.out.println("The employee has Motorcycle");
         super.printMyData();
-        System.out.println("The Make is : " +this.getMake());
-        System.out.println("The Plate no is : "+this.getPlate());
         System.out.println("The Insurance Company name is : " +getInsuranceCompany());
-        System.out.println("The Insurance is : "+getInsurance());
-        System.out.println("The car maintaince cost is : "+getCarMaintainceCost());
+        try{
+
+            if(getInsurance().equalsIgnoreCase("TrUe")) {
+                System.out.println("The Insurance is Active ");
+            }
+            else if (getInsurance().equalsIgnoreCase("False"))
+            {
+                System.out.println("The Insurance is Not Active ");
+            }
+            else throw new Exception("Please Insert True or False for Insurance Status");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
+        System.out.println("The Motorcycle maintaince cost is : "+ getCarMaintenanceCost() + "$");
+    }
+
+    @Override
+    public float calcEarnings() {
+        return 0;
     }
 }
