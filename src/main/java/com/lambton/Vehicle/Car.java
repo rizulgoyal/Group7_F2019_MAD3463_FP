@@ -43,10 +43,15 @@ public class Car extends Vehicle {
         this.insurance = insurance;
     }
 
-//Iprintable method is overloaded
+    //Iprintable method is overloaded
 
 
     @Override
     public void printMyData() {
+        System.out.println("The Make is : " +this.getMake());
+        System.out.println("The Plate no is : "+this.getPlate());
+        System.out.println("The Insurance Company name is : " +getInsuranceCompany());
+        System.out.println("The Insurance is : "+getInsurance());
+
     }
 }

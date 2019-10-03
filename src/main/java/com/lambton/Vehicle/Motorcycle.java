@@ -50,5 +50,10 @@ public class Motorcycle extends Vehicle {
     @Override
     public void printMyData() {
         super.printMyData();
+        System.out.println("The Make is : " +this.getMake());
+        System.out.println("The Plate no is : "+this.getPlate());
+        System.out.println("The Insurance Company name is : " +getInsuranceCompany());
+        System.out.println("The Insurance is : "+getInsurance());
+        System.out.println("The car maintaince cost is : "+getCarMaintainceCost());
     }
 }
