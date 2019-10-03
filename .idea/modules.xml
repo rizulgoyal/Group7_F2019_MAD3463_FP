@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/F2019_MAD3463_FP1.iml" filepath="$PROJECT_DIR$/.idea/F2019_MAD3463_FP1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FinalProject.iml" filepath="$PROJECT_DIR$/.idea/modules/FinalProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FinalProject.main.iml" filepath="$PROJECT_DIR$/.idea/modules/FinalProject.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/FinalProject.test.iml" filepath="$PROJECT_DIR$/.idea/modules/FinalProject.test.iml" />
     </modules>
   </component>
 </project>

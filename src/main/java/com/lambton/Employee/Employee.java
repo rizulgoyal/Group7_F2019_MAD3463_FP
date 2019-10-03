@@ -6,7 +6,7 @@ import java.time.LocalDate;
 
 public abstract class Employee implements IPrintable {
 
-    //declare variables
+    //declare variablessss
 
     private int employeeID;
     private String employeeName;
