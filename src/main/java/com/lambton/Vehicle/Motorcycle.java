@@ -3,28 +3,35 @@ package com.lambton.Vehicle;
 public class Motorcycle extends Vehicle {
     //declaring variables
 
-    private String carMaintainceCost;
+    private int carMaintainceCost;
     private String insuranceCompany;
     private Boolean insurance;
 
     //constructor
 
-    public Motorcycle(String make, String plate, String carMaintainceCost, String insuranceCompany, Boolean insurance) {
+    public Motorcycle(String make, String plate, int carMaintainceCost, String insuranceCompany, Boolean insurance) {
         super(make, plate);
         this.carMaintainceCost = carMaintainceCost;
         this.insuranceCompany = insuranceCompany;
         this.insurance = insurance;
     }
 
+    //Extra Constructor because boolean is not proper functionable
+    public Motorcycle(String make, String plate, int carMaintainceCost, String insuranceCompany) {
+        super(make, plate);
+        this.carMaintainceCost = carMaintainceCost;
+        this.insuranceCompany = insuranceCompany;
+
+    }
 
     //Getter and Setter
 
 
-    public String getCarMaintainceCost() {
+    public int getCarMaintainceCost() {
         return carMaintainceCost;
     }
 
-    public void setCarMaintainceCost(String carMaintainceCost) {
+    public void setCarMaintainceCost(int carMaintainceCost) {
         this.carMaintainceCost = carMaintainceCost;
     }
 
@@ -49,7 +56,6 @@ public class Motorcycle extends Vehicle {
 
     @Override
     public void printMyData() {
-        super.printMyData();
         System.out.println("The Make is : " +this.getMake());
         System.out.println("The Plate no is : "+this.getPlate());
         System.out.println("The Insurance Company name is : " +getInsuranceCompany());

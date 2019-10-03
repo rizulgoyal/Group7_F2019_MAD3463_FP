@@ -16,6 +16,12 @@ public class Car extends Vehicle {
         this.insurance = insurance;
     }
 
+    //Extra Constructor because boolean is not proper functionable
+    public Car(String make, String plate, String carMaintainceCost, String insuranceCompany) {
+        super(make, plate);
+        this.carMaintainceCost = carMaintainceCost;
+        this.insuranceCompany = insuranceCompany;
+    }
 
     //Getter and Setter
 
