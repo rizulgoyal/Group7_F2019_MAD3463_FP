@@ -8,7 +8,7 @@ public class Car extends Vehicle {
     //Constructor
 
     public Car(String make, String plate, String insuranceCompany, float insuranceCost,String carMaintainceCost) {
-        super(make, plate, insuranceCompany, insuranceCost);
+        super(make, plate, insuranceCompany, insuranceCost, );
         this.carMaintainceCost = carMaintainceCost;
 
     }
@@ -29,5 +29,6 @@ public class Car extends Vehicle {
     @Override
     public void printMyData() {
         super.printMyData();
+        System.out.println("The ");
     }
 }
