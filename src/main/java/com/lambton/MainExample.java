@@ -44,14 +44,15 @@ public class MainExample {
                 "ABCD 123",
                 (float) 403.15f,
                 "Alexa",
-                "ALSE");
+                "fALSE");
 
         p5.printMyData();
-        if (p1.getEmployeeID()==p5.getEmployeeID())
-        {
-            p1.printMyData();
-        }
-        Motorcycle p6 = new Motorcycle(2,"Harley","CCSD 541",(float)254.12,"Scotia","True");
+        Motorcycle p6 = new Motorcycle(2,
+                "Harley",
+                "CCSD 541",
+                (float)254.12,
+                "Scotia",
+                "True");
         p6.printMyData();
 
 

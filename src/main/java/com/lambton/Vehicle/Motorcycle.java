@@ -66,7 +66,7 @@ public class Motorcycle extends Vehicle {
             System.out.println(e.getMessage());
         }
 
-        System.out.println("The car maintaince cost is : "+ getCarMaintenanceCost());
+        System.out.println("The Motorcycle maintaince cost is : "+ getCarMaintenanceCost() + "$");
     }
 
     @Override

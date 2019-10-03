@@ -54,10 +54,10 @@ public class Car extends Vehicle {
         System.out.println("The Insurance Company name is : " +getInsuranceCompany());
         try{
 
-            if(getInsurance()=="TRUE") {
+            if(getInsurance().equalsIgnoreCase("TrUe")) {
                 System.out.println("The Insurance is Active ");
             }
-            else if (getInsurance()=="False")
+            else if (getInsurance().equalsIgnoreCase("False"))
             {
                 System.out.println("The Insurance is Not Active ");
             }
@@ -67,7 +67,7 @@ public class Car extends Vehicle {
         }
 
 
-        System.out.println("Maintenance Cost: " + carMaintenanceCost);
+        System.out.println("Maintenance Cost: " + carMaintenanceCost + "$");
 
     }
 
