@@ -5,11 +5,11 @@ public class Motorcycle extends Vehicle {
 
     private float carMaintenanceCost;
     private String insuranceCompany;
-    private Boolean insurance;
+    private String insurance;
 
     //constructor
 
-    public Motorcycle(int employeeID, String make, String plate, float carMaintenanceCost, String insuranceCompany, Boolean insurance) {
+    public Motorcycle(int employeeID, String make, String plate, float carMaintenanceCost, String insuranceCompany, String insurance) {
         super(employeeID, make, plate);
         this.carMaintenanceCost = carMaintenanceCost;
         this.insuranceCompany = insuranceCompany;
@@ -36,11 +36,11 @@ public class Motorcycle extends Vehicle {
         this.insuranceCompany = insuranceCompany;
     }
 
-    public Boolean getInsurance() {
+    public String getInsurance() {
         return insurance;
     }
 
-    public void setInsurance(Boolean insurance) {
+    public void setInsurance(String insurance) {
         this.insurance = insurance;
     }
 
@@ -49,9 +49,23 @@ public class Motorcycle extends Vehicle {
 
     @Override
     public void printMyData() {
+        System.out.println("The employee has Motorcycle");
         super.printMyData();
         System.out.println("The Insurance Company name is : " +getInsuranceCompany());
-        System.out.println("The Insurance is : "+getInsurance());
+        try{
+
+            if(getInsurance()=="TRUE") {
+                System.out.println("The Insurance is Active ");
+            }
+            else if (getInsurance()=="False")
+            {
+                System.out.println("The Insurance is Not Active ");
+            }
+            else throw new Exception("Please Insert True or False for Insurance Status");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
+
         System.out.println("The car maintaince cost is : "+ getCarMaintenanceCost());
     }
 

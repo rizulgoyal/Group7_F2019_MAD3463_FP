@@ -1,6 +1,7 @@
 package com.lambton.Employee;
 
 import com.lambton.IPrintable;
+import com.lambton.Vehicle.Vehicle;
 
 import java.time.LocalDate;
 
@@ -61,6 +62,7 @@ public abstract class Employee implements IPrintable {
         System.out.println("ID: "+ getEmployeeID());
         System.out.println("Name: "+getEmployeeName());
         System.out.println("Birth Year: " + calcBirthYear());
+
 
     }
 

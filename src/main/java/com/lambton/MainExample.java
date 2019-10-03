@@ -38,7 +38,18 @@ public class MainExample {
         Intern p4 = new Intern(4,"Javed",35,"Saint Thomas", 800);
         p4.printMyData();
 
-        Car p5 = new Car(1,"HONDA","ABCD 123",)
+        Car p5 = new Car(1,
+                "HONDA",
+                "ABCD 123",
+                (float) 403.15f,
+                "Alexa",
+                "ALSE");
+
+        p5.printMyData();
+        if (p1.getEmployeeID()==p5.getEmployeeID())
+        {
+            p1.printMyData();
+        }
 
 
 
