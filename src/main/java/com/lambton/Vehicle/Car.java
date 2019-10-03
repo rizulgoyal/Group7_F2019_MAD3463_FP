@@ -23,4 +23,11 @@ public class Car extends Vehicle {
         this.carMaintainceCost = carMaintainceCost;
     }
 
+    //Iprintable method is overloaded
+
+
+    @Override
+    public void printMyData() {
+        super.printMyData();
+    }
 }
