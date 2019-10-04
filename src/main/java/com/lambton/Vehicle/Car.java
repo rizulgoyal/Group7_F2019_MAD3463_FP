@@ -21,16 +21,15 @@ public class Car extends Vehicle implements IPrintable {
 
 }
 
-
-
-
-
     @Override
     public void printMyData() {
-        System.out.println("The Make is : " +this.getMake());
-        System.out.println("The Plate no is : "+this.getPlate());
-        System.out.println("The Insurance Company name is : " +getInsuranceCompany());
-        System.out.println("The Insurance is : "+getInsurance());
-
+        System.out.println("Has a " +jsonObject.get("type"));
+        System.out.println("Manufacturer: " + make );
+        System.out.println("Licence Plate : " +plate);
+        System.out.println("Model :" +model);
+        if(insurance=true)
+            System.out.println("Insurance : Yes");
+        else
+            System.out.println("Insurance : No");
     }
 }
