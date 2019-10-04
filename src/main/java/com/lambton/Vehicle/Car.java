@@ -7,14 +7,15 @@ import org.json.simple.JSONObject;
 public class Car extends Vehicle implements IPrintable {
     //declaring variables
     JSONObject jsonObject;
-    String carMaintainceCost;
-    String insuranceCompany;
+    String model;
+    String yearOfmake;
     Boolean insurance;
 
+    //Constructor of car class is created
     public Car(JSONObject jsonObject) {
         this.jsonObject = jsonObject;
         super.make= (String) jsonObject.get("make");
-        super.Plate = (String) jsonObject.get("plate");
+        super.plate = (String) jsonObject.get("plate");
         model = (String) jsonObject.get("model");
         insurance = (Boolean) jsonObject.get("insurance");
 
