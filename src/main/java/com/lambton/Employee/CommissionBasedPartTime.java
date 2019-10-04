@@ -1,10 +1,9 @@
 package com.lambton.Employee;
 
-import com.lambton.Employee.PartTime;
-import com.lambton.IPrintable;
-
 public class CommissionBasedPartTime {
+    //variable declaration
     double commissionPercentage;
+    //calcEarnings method created
     public void calculateEarnings(float rate,float commission,float hoursworked)
     {
 
