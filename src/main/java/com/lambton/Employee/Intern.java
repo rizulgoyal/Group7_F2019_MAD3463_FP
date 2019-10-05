@@ -3,7 +3,7 @@ package com.lambton.Employee;
 import com.lambton.IPrintable;
 import com.lambton.SalaryException;
 
-public class Intern extends Employee implements IPrintable {
+public final class Intern extends Employee implements IPrintable {
 
     // create variables for stroing values
     String schoolName;
