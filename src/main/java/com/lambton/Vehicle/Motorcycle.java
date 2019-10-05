@@ -61,7 +61,7 @@ public final class Motorcycle extends Vehicle implements IPrintable {
             System.out.println("The Plate no is : "+this.getPlate());
 
             System.out.println("The Insurance Company name is : " + getInsuranceCompany());
-
+            //try and catch to input correct boolean value as string
             try {
 
                 if (getInsurance().equalsIgnoreCase("TrUe")) {
