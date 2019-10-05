@@ -45,7 +45,7 @@ public class MainExample {
                 "Royal Enfield","XVFS 321",(float) 365.21,"Scotia","True");
         Car car2 = new Car(4,"Javed",20,true,"Chevrolet","USTF365",
                 (float) 251.21,"Airhub","True");
-        //function of ifelse to compare employee id to display his salary details
+        //function of if else to compare employee id to display his salary details
         if(p1.getEmployeeID() == car1.getEmployeeID() ) {
             car1.printMyData();
             p1.printMyData();
