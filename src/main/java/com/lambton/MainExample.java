@@ -47,26 +47,15 @@ public class MainExample {
                 (float) 251.21,"Airhub","True");
 
 
-        //function of if else to compare employee id to display his salary details
-        if(p1.getEmployeeID() == car1.getEmployeeID() ) {
-            car1.printMyData();
-            p1.printMyData();
-        }
+        //function of if else to compare employee id to display his salary details of first employee
+        if(p1.getEmployeeID() == car1.getEmployeeID() )
+        { car1.printMyData(); p1.printMyData(); }
         else if(p1.getEmployeeID() == car2.getEmployeeID())
-        {
-            car2.printMyData();
-            p1.printMyData();
-        }
+        {car2.printMyData(); p1.printMyData(); }
         else if(p1.getEmployeeID() == bike2.getEmployeeID())
-        {
-            bike2.printMyData();
-            p1.printMyData();
-        }
+        {bike2.printMyData(); p1.printMyData(); }
         else if(p1.getEmployeeID() == bike1.getEmployeeID())
-        {
-            bike1.printMyData();
-            p1.printMyData();
-        }
+        {bike1.printMyData();p1.printMyData(); }
 
 
 
