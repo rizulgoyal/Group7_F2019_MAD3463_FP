@@ -50,7 +50,6 @@ public final class CommisionBasedPartTime extends PartTime implements IPrintable
         System.out.println("Rate: " + this.getRate() + "$ per hour");
         System.out.println("Hours Worked: " + this.getHoursWorked());
 
-        System.out.println("Commision Percentage: " + commisionPercentage + "%");
         try{
             if(commisionPercentage<10)
             {
@@ -58,13 +57,13 @@ public final class CommisionBasedPartTime extends PartTime implements IPrintable
             }
             else
             {
-                System.out.println("Fixed Amount: " + fixedAmount + "$");            }
+                System.out.println("Commision Percentage: " + commisionPercentage + "%");
 
 
-        }
+        }}
         catch (SalaryException e)
         {
-            System.out.println(fixedAmount+"$ is not acceptable");
+            System.out.println(commisionPercentage+"% is not acceptable");
         }
         System.out.println("Total Earnings: " + calcEarnings() + "$");
 
