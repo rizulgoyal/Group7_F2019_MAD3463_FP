@@ -9,8 +9,8 @@ public class Car extends Vehicle {
 
     //Constructor
 
-    public Car(int employeeID, String make, String plate, float carMaintenanceCost, String insuranceCompany, String insurance) {
-        super(employeeID, make, plate);
+    public Car(int employeeID, String employeeName, int employeeAge, boolean vehicle,String make, String plate, float carMaintenanceCost, String insuranceCompany, String insurance) {
+        super(employeeID, employeeName, employeeAge, make, plate, vehicle);
         this.carMaintenanceCost = carMaintenanceCost;
         this.insuranceCompany = insuranceCompany;
         this.insurance = insurance;
@@ -39,35 +39,48 @@ public class Car extends Vehicle {
         return insurance;
     }
 
+
     public void setInsurance(String insurance) {
         this.insurance = insurance;
     }
+
 
     //Iprintable method is overloaded
 
 
     @Override
     public void printMyData() {
-        System.out.println("The employee has Car");
+
         super.printMyData();
 
-        System.out.println("The Insurance Company name is : " +getInsuranceCompany());
-        try{
+        if(this.isVehicle() == true)
+        {
+            System.out.println("The Employee has car");
+            System.out.println("The Make is : " +this.getMake());
+            System.out.println("The Plate no is : "+this.getPlate());
 
-            if(getInsurance().equalsIgnoreCase("TrUe")) {
-                System.out.println("The Insurance is Active ");
+            System.out.println("The Insurance Company name is : " + getInsuranceCompany());
+
+            try {
+
+                if (getInsurance().equalsIgnoreCase("TrUe")) {
+                    System.out.println("The Insurance is Active ");
+                } else if (getInsurance().equalsIgnoreCase("False")) {
+                    System.out.println("The Insurance is Not Active ");
+                } else throw new Exception("Please Insert True or False for Insurance Status");
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
             }
-            else if (getInsurance().equalsIgnoreCase("False"))
-            {
-                System.out.println("The Insurance is Not Active ");
-            }
-            else throw new Exception("Please Insert True or False for Insurance Status");
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
+
+
+            System.out.println("Maintenance Cost: " + carMaintenanceCost + "$");
+        }
+        else
+        {
+            System.out.println("The employee has no vehicle registered");
         }
 
 
-        System.out.println("Maintenance Cost: " + carMaintenanceCost + "$");
 
     }
 

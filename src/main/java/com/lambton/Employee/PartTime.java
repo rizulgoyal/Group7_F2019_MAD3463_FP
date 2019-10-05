@@ -11,8 +11,10 @@ public abstract class PartTime extends Employee implements IPrintable {
 
 
     // constructor to input all values
+
+
     public PartTime(int employeeID, String employeeName, int employeeAge, float rate, int hoursWorked) {
-        super(employeeID);
+        super(employeeID, employeeName, employeeAge);
         this.rate = rate;
         this.hoursWorked = hoursWorked;
     }
@@ -40,7 +42,6 @@ public abstract class PartTime extends Employee implements IPrintable {
     //overriding interface function
     @Override
     public void printMyData() {
-        super.printMyData();
 
 
     }

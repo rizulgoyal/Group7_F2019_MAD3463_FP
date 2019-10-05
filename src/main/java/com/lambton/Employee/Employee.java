@@ -1,7 +1,6 @@
 package com.lambton.Employee;
 
 import com.lambton.IPrintable;
-import com.lambton.Vehicle.Vehicle;
 
 import java.time.LocalDate;
 
@@ -15,11 +14,14 @@ public abstract class Employee implements IPrintable {
     private int BirthYear;
 
     //constructor
-    public Employee(int employeeID) {
+
+
+    public Employee(int employeeID, String employeeName, int employeeAge) {
         this.employeeID = employeeID;
         this.employeeName = employeeName;
         this.employeeAge = employeeAge;
     }
+
 
 
     // getter and setter
@@ -60,7 +62,9 @@ public abstract class Employee implements IPrintable {
     @Override
     public void printMyData() {
         System.out.println("ID: "+ getEmployeeID());
+
         System.out.println("Name: "+getEmployeeName());
+
         System.out.println("Birth Year: " + calcBirthYear());
 
 

@@ -11,10 +11,11 @@ public class FullTime extends Employee implements IPrintable {
 
     // constructor to input all values
 
-    public FullTime(int employeeID, String employeeName, int employeeAge, float salary, float bonus) {
-        super(employeeID);
-        this.salary = (int) salary;
-        this.bonus = (int) bonus;
+
+    public FullTime(int employeeID, String employeeName, int employeeAge, int salary, int bonus) {
+        super(employeeID, employeeName, employeeAge);
+        this.salary = salary;
+        this.bonus = bonus;
     }
 
     public float getSalary() {
@@ -45,7 +46,6 @@ public class FullTime extends Employee implements IPrintable {
     //overriding interface function
     @Override
     public void printMyData() {
-        super.printMyData();
         System.out.println("Employee is Full Time ");
         System.out.println("Salary: " + salary + "$");
         System.out.println("Bonus: " + bonus + "$");

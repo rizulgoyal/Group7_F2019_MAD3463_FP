@@ -3,15 +3,15 @@ package com.lambton.Vehicle;
 public class Motorcycle extends Vehicle {
     //declaring variables
 
-    private float carMaintenanceCost;
+    private float bikeMaintenanceCost;
     private String insuranceCompany;
     private String insurance;
 
     //constructor
 
-    public Motorcycle(int employeeID, String make, String plate, float carMaintenanceCost, String insuranceCompany, String insurance) {
-        super(employeeID, make, plate);
-        this.carMaintenanceCost = carMaintenanceCost;
+    public Motorcycle(int employeeID, String employeeName, int employeeAge, boolean vehicle,String make, String plate, float carMaintenanceCost, String insuranceCompany, String insurance) {
+        super(employeeID, employeeName, employeeAge, make, plate, vehicle);
+        this.bikeMaintenanceCost = carMaintenanceCost;
         this.insuranceCompany = insuranceCompany;
         this.insurance = insurance;
     }
@@ -20,12 +20,12 @@ public class Motorcycle extends Vehicle {
     //Getter and Setter
 
 
-    public float getCarMaintenanceCost() {
-        return carMaintenanceCost;
+    public float getBikeMaintenanceCost() {
+        return bikeMaintenanceCost;
     }
 
-    public void setCarMaintenanceCost(float carMaintenanceCost) {
-        this.carMaintenanceCost = carMaintenanceCost;
+    public void setBikeMaintenanceCost(float bikeMaintenanceCost) {
+        this.bikeMaintenanceCost = bikeMaintenanceCost;
     }
 
     public String getInsuranceCompany() {
@@ -49,28 +49,43 @@ public class Motorcycle extends Vehicle {
 
     @Override
     public void printMyData() {
-        System.out.println("The employee has Motorcycle");
-        super.printMyData();
-        System.out.println("The Insurance Company name is : " +getInsuranceCompany());
-        try{
 
-            if(getInsurance().equalsIgnoreCase("TrUe")) {
-                System.out.println("The Insurance is Active ");
+        super.printMyData();
+
+        if(this.isVehicle() == true)
+        {
+            System.out.println("The Employee has car");
+            System.out.println("The Make is : " +this.getMake());
+            System.out.println("The Plate no is : "+this.getPlate());
+
+            System.out.println("The Insurance Company name is : " + getInsuranceCompany());
+
+            try {
+
+                if (getInsurance().equalsIgnoreCase("TrUe")) {
+                    System.out.println("The Insurance is Active ");
+                } else if (getInsurance().equalsIgnoreCase("False")) {
+                    System.out.println("The Insurance is Not Active ");
+                } else throw new Exception("Please Insert True or False for Insurance Status");
+            } catch (Exception e) {
+                System.out.println(e.getMessage());
             }
-            else if (getInsurance().equalsIgnoreCase("False"))
-            {
-                System.out.println("The Insurance is Not Active ");
-            }
-            else throw new Exception("Please Insert True or False for Insurance Status");
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
+
+
+            System.out.println("Maintenance Cost: " + bikeMaintenanceCost + "$");
+
+        }
+        else
+        {
+            System.out.println("The employee has no vehicle registered");
         }
 
-        System.out.println("The Motorcycle maintaince cost is : "+ getCarMaintenanceCost() + "$");
-    }
 
+    }
     @Override
     public float calcEarnings() {
         return 0;
     }
+
+
 }

@@ -14,46 +14,58 @@ public class MainExample {
 
         CommisionBasedPartTime p1 = new CommisionBasedPartTime(
                 1,
-                "Rizul",
-                25,
+                "",21,
                 (float)15.45,
                 23,
                 15);
-            p1.printMyData();
 
-            FixedBasedPartTime p2 = new FixedBasedPartTime(2,
-                    "Anmol",
-                    22,
+
+            FixedBasedPartTime p2 = new FixedBasedPartTime(2,"",21,
                     (float)14.5,
                     40,
                     150);
-            p2.printMyData();
 
-        FullTime p3 = new FullTime(3,
-                "Harpreet",
-                28,
+
+        FullTime p3 = new FullTime(3,"",25,
                 1000,
                 250);
-        p3.printMyData();
 
-        Intern p4 = new Intern(4,"Javed",35,"Saint Thomas", 800);
-        p4.printMyData();
 
-        Car p5 = new Car(1,
-                "HONDA",
-                "ABCD 123",
-                (float) 403.15f,
-                "Alexa",
-                "fALSE");
+        Intern p4 = new Intern(4,"",21,"Saint Thomas", 800);
 
-        p5.printMyData();
-        Motorcycle p6 = new Motorcycle(2,
-                "Harley",
-                "CCSD 541",
-                (float)254.12,
-                "Scotia",
-                "True");
-        p6.printMyData();
+
+        Car car1 = new Car(1,"Rizulnew",24,true,"Honda","ABCD123",
+                (float) 235.21,"Alexa","True");
+
+
+
+        Motorcycle bike1 = new Motorcycle(2,"Anmol new ",26,true,
+                "Harley","ABCD542",(float) 254.31,"TD","True");
+        Motorcycle bike2 = new Motorcycle(3,"Harpreet new ",30,true,
+                "Royal Enfield","XVFS 321",(float) 365.21,"Scotia","True");
+        Car car2 = new Car(4,"Javed",20,true,"Chevrolet","USTF365",
+                (float) 251.21,"Airhub","True");
+
+        if(p1.getEmployeeID() == car1.getEmployeeID() ) {
+            car1.printMyData();
+            p1.printMyData();
+        }
+        else if(p1.getEmployeeID() == car2.getEmployeeID())
+        {
+            car2.printMyData();
+            p1.printMyData();
+        }
+        else if(p1.getEmployeeID() == bike2.getEmployeeID())
+        {
+            bike2.printMyData();
+            p1.printMyData();
+        }
+        else if(p1.getEmployeeID() == bike1.getEmployeeID())
+        {
+            bike1.printMyData();
+            p1.printMyData();
+        }
+
 
 
 

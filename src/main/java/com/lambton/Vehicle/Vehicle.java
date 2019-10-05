@@ -8,16 +8,29 @@ public abstract class Vehicle extends Employee implements IPrintable {
     //declaring variables
     private String make;
     private String plate;
+    private boolean vehicle;
 
 
     // Constructor
 
-    public Vehicle(int employeeID,String make, String plate) {
-        super(employeeID);
+    public Vehicle(int employeeID, String employeeName, int employeeAge, String make, String plate, boolean vehicle) {
+        super(employeeID, employeeName, employeeAge);
         this.make = make;
         this.plate = plate;
+        this.vehicle = vehicle;
     }
+
+
     // Getter and Setter
+
+
+    public boolean isVehicle() {
+        return vehicle;
+    }
+
+    public void setVehicle(boolean vehicle) {
+        this.vehicle = vehicle;
+    }
 
     public String getMake() {
         return make;
@@ -41,8 +54,8 @@ public abstract class Vehicle extends Employee implements IPrintable {
 
     @Override
     public void printMyData() {
-        System.out.println("The Make is : " +getMake());
-        System.out.println("The Plate no is : "+getPlate());
+        super.printMyData();
+
 
     }
 
