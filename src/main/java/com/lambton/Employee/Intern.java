@@ -6,15 +6,17 @@ import com.lambton.SalaryException;
 public final class Intern extends Employee implements IPrintable {
 
     // create variables for stroing values
-    String schoolName;
-    int salary;
+    private String schoolName;
+    private int salary;
 
+    //constructor to get values
     public Intern(int employeeID, String employeeName, int employeeAge, String schoolName, int salary) {
         super(employeeID, employeeName, employeeAge);
         this.schoolName = schoolName;
         this.salary = salary;
     }
 
+    //getter and setter
     public String getSchoolName() {
         return schoolName;
     }
