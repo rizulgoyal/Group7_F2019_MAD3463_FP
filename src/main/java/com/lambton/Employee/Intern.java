@@ -15,6 +15,22 @@ public final class Intern extends Employee implements IPrintable {
         this.salary = salary;
     }
 
+    public String getSchoolName() {
+        return schoolName;
+    }
+
+    public void setSchoolName(String schoolName) {
+        this.schoolName = schoolName;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
     //override abstract function to calculate salary
     @Override
     public float calcEarnings() {
