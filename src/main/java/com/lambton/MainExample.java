@@ -53,7 +53,7 @@ public class MainExample {
         {bike2.printMyData(); p1.printMyData(); }
         else if(p1.getEmployeeID() == bike1.getEmployeeID())
         {bike1.printMyData();p1.printMyData(); }
-
+        System.out.println("*******************************************************************************");
 
         //function of if else to compare employee id to display his salary details of second employee
         if(p2.getEmployeeID() == car1.getEmployeeID() )
@@ -65,6 +65,7 @@ public class MainExample {
         else if(p2.getEmployeeID() == bike1.getEmployeeID())
         {bike1.printMyData();p2.printMyData(); }
 
+        System.out.println("*******************************************************************************");
         //function of if else to compare employee id to display his salary details of third employee
         if(p3.getEmployeeID() == car1.getEmployeeID() )
         { car1.printMyData(); p3.printMyData(); }
@@ -74,6 +75,7 @@ public class MainExample {
         {bike2.printMyData(); p3.printMyData(); }
         else if(p3.getEmployeeID() == bike1.getEmployeeID())
         {bike1.printMyData();p3.printMyData(); }
+        System.out.println("*******************************************************************************");
 
         //function of if else to compare employee id to display his salary details of third employee
         if(p4.getEmployeeID() == car1.getEmployeeID() )
@@ -84,6 +86,7 @@ public class MainExample {
         {bike2.printMyData(); p4.printMyData(); }
         else if(p4.getEmployeeID() == bike1.getEmployeeID())
         {bike1.printMyData();p4.printMyData(); }
+        System.out.println("*******************************************************************************");
 
 
         // total salary payroll calculations
