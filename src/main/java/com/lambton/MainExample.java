@@ -20,7 +20,7 @@ public class MainExample {
             FixedBasedPartTime p2 = new FixedBasedPartTime(2,"",21,
                     (float)14.5,
                     40,
-                    150);
+                    350);
 
 
         FullTime p3 = new FullTime(3,"",25,
@@ -85,10 +85,12 @@ public class MainExample {
         else if(p4.getEmployeeID() == bike1.getEmployeeID())
         {bike1.printMyData();p4.printMyData(); }
 
+
+        // total salary payroll calculations
          float salary1 = p1.calcEarnings();
          float salary2 = p2.calcEarnings();
          int salary3 = (int) p3.calcEarnings();
-        float salart4 = p4.();
+        float salart4 = p4.getSalary();
         float totalSalary = salary1+salary2+salary3+salart4;
         System.out.println("Total Payroll is :" + totalSalary + "$");
 

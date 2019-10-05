@@ -1,6 +1,7 @@
 package com.lambton.Employee;
 
 import com.lambton.IPrintable;
+import com.lambton.SalaryException;
 
 public final class FullTime extends Employee implements IPrintable {
 
@@ -47,8 +48,28 @@ public final class FullTime extends Employee implements IPrintable {
     @Override
     public void printMyData() {
         System.out.println("Employee is Full Time ");
-        System.out.println("Salary: " + salary + "$");
+
+
+
+        try{
+            if(salary<1000)
+            {
+                throw  new SalaryException();
+            }
+            else
+            {
+                System.out.println("Salary :" + salary + "$");
+            }
+
+
+        }
+        catch (SalaryException e)
+        {
+            System.out.println(salary+"$ Salary is not acceptable");
+        }
         System.out.println("Bonus: " + bonus + "$");
+
+
         System.out.println("Total Earnings: " + calcEarnings() + "$");
     }
 }

@@ -2,6 +2,7 @@ package com.lambton.Employee;
 
 import com.lambton.Employee.PartTime;
 import com.lambton.IPrintable;
+import com.lambton.SalaryException;
 
 public final class CommisionBasedPartTime extends PartTime implements IPrintable {
 
@@ -44,9 +45,26 @@ public final class CommisionBasedPartTime extends PartTime implements IPrintable
 
         super.printMyData();
         System.out.println("Employee is PartTime/Fixed Amount Based ");
+
+
         System.out.println("Rate: " + this.getRate() + "$ per hour");
         System.out.println("Hours Worked: " + this.getHoursWorked());
-        System.out.println("Commision Percentage: " + commisionPercentage + "%");
+
+        try{
+            if(commisionPercentage<10)
+            {
+                throw  new SalaryException();
+            }
+            else
+            {
+                System.out.println("Commision Percentage: " + commisionPercentage + "%");
+
+
+        }}
+        catch (SalaryException e)
+        {
+            System.out.println(commisionPercentage+"% is not acceptable");
+        }
         System.out.println("Total Earnings: " + calcEarnings() + "$");
 
     }
