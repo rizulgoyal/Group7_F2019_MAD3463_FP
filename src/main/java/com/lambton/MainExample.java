@@ -4,10 +4,15 @@ import com.lambton.Employee.*;
 import com.lambton.Vehicle.Car;
 import com.lambton.Vehicle.Motorcycle;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintStream;
+
 public class MainExample {
 
-    public static void main(String[] args) {
-
+    public static void main(String[] args) throws FileNotFoundException {
+        PrintStream out = new PrintStream(new FileOutputStream("output.txt"));
+        System.setOut(out);
 
         CommisionBasedPartTime p1 = new CommisionBasedPartTime(
                 1,
