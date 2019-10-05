@@ -9,6 +9,16 @@ public final class FixedBasedPartTime extends PartTime implements IPrintable {
     // create variables for stroing values
     int fixedAmount;
 
+
+    
+    public int getFixedAmount() {
+        return fixedAmount;
+    }
+
+    public void setFixedAmount(int fixedAmount) {
+        this.fixedAmount = fixedAmount;
+    }
+
     // constructor to input all values
 
 
