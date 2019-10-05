@@ -56,7 +56,7 @@ public final class Motorcycle extends Vehicle implements IPrintable {
 
         if(this.isVehicle() == true)
         {
-            System.out.println("The Employee has car");
+            System.out.println("The Employee has Motorcycle");
             System.out.println("The Make is : " +this.getMake());
             System.out.println("The Plate no is : "+this.getPlate());
 
