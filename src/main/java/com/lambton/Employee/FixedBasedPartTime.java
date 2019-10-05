@@ -10,7 +10,7 @@ public final class FixedBasedPartTime extends PartTime implements IPrintable {
     int fixedAmount;
 
 
-    
+    // getter and setter
     public int getFixedAmount() {
         return fixedAmount;
     }
