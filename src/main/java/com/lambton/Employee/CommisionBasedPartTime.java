@@ -3,7 +3,7 @@ package com.lambton.Employee;
 import com.lambton.Employee.PartTime;
 import com.lambton.IPrintable;
 
-public class CommisionBasedPartTime extends PartTime implements IPrintable {
+public final class CommisionBasedPartTime extends PartTime implements IPrintable {
 
 
     // create variables for stroing values

@@ -1,6 +1,8 @@
 package com.lambton.Vehicle;
 
-public class Motorcycle extends Vehicle {
+import com.lambton.IPrintable;
+
+public final class Motorcycle extends Vehicle implements IPrintable {
     //declaring variables
 
     private float bikeMaintenanceCost;
@@ -54,7 +56,7 @@ public class Motorcycle extends Vehicle {
 
         if(this.isVehicle() == true)
         {
-            System.out.println("The Employee has car");
+            System.out.println("The Employee has Motorcycle");
             System.out.println("The Make is : " +this.getMake());
             System.out.println("The Plate no is : "+this.getPlate());
 

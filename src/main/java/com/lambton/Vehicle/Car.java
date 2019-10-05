@@ -1,6 +1,8 @@
 package com.lambton.Vehicle;
 
-public class Car extends Vehicle {
+import com.lambton.IPrintable;
+
+public final class Car extends Vehicle implements IPrintable {
     //declaring variables
 
     private float carMaintenanceCost;

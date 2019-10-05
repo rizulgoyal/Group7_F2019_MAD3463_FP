@@ -3,7 +3,7 @@ package com.lambton.Employee;
 import com.lambton.IPrintable;
 import com.lambton.SalaryException;
 
-public class Intern extends Employee implements IPrintable {
+public final class Intern extends Employee implements IPrintable {
 
     // create variables for stroing values
     String schoolName;
@@ -12,6 +12,22 @@ public class Intern extends Employee implements IPrintable {
     public Intern(int employeeID, String employeeName, int employeeAge, String schoolName, int salary) {
         super(employeeID, employeeName, employeeAge);
         this.schoolName = schoolName;
+        this.salary = salary;
+    }
+
+    public String getSchoolName() {
+        return schoolName;
+    }
+
+    public void setSchoolName(String schoolName) {
+        this.schoolName = schoolName;
+    }
+
+    public int getSalary() {
+        return salary;
+    }
+
+    public void setSalary(int salary) {
         this.salary = salary;
     }
 
