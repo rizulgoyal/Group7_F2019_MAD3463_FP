@@ -36,7 +36,7 @@ public final class FixedBasedPartTime extends PartTime implements IPrintable {
         System.out.println("Rate: " + this.getRate() + "$ per hour");
         System.out.println("Hours Worked: " + this.getHoursWorked());
         try{
-            if(fixedAmount<10)
+            if(fixedAmount<300)
             {
                 throw  new SalaryException();
             }
@@ -48,7 +48,7 @@ public final class FixedBasedPartTime extends PartTime implements IPrintable {
         }
         catch (SalaryException e)
         {
-            System.out.println(fixedAmount+"$ Salary is not acceptable");
+            System.out.println(fixedAmount+"$ is not acceptable");
         }
 
 

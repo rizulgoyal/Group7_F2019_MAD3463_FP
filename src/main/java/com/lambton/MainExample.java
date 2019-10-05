@@ -20,7 +20,7 @@ public class MainExample {
             FixedBasedPartTime p2 = new FixedBasedPartTime(2,"",21,
                     (float)14.5,
                     40,
-                    150);
+                    350);
 
 
         FullTime p3 = new FullTime(3,"",25,
