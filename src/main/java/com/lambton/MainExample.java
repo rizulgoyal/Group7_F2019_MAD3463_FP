@@ -58,7 +58,7 @@ public class MainExample {
         {bike1.printMyData();p1.printMyData(); }
 
 
-        //function of if else to compare employee id to display his salary details of first employee
+        //function of if else to compare employee id to display his salary details of second employee
         if(p2.getEmployeeID() == car1.getEmployeeID() )
         { car1.printMyData(); p2.printMyData(); }
         else if(p2.getEmployeeID() == car2.getEmployeeID())
@@ -67,6 +67,16 @@ public class MainExample {
         {bike2.printMyData(); p2.printMyData(); }
         else if(p2.getEmployeeID() == bike1.getEmployeeID())
         {bike1.printMyData();p2.printMyData(); }
+
+        //function of if else to compare employee id to display his salary details of third employee
+        if(p3.getEmployeeID() == car1.getEmployeeID() )
+        { car1.printMyData(); p3.printMyData(); }
+        else if(p3.getEmployeeID() == car2.getEmployeeID())
+        {car2.printMyData(); p3.printMyData(); }
+        else if(p3.getEmployeeID() == bike2.getEmployeeID())
+        {bike2.printMyData(); p3.printMyData(); }
+        else if(p3.getEmployeeID() == bike1.getEmployeeID())
+        {bike1.printMyData();p3.printMyData(); }
 
 
 
