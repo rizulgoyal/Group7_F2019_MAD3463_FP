@@ -2,7 +2,7 @@ package com.lambton.Employee;
 
 import com.lambton.IPrintable;
 
-public class FullTime extends Employee implements IPrintable {
+public final class FullTime extends Employee implements IPrintable {
 
     // create variables for stroing values
 
