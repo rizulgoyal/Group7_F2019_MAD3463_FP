@@ -18,7 +18,7 @@ public final class FullTime extends Employee implements IPrintable {
         this.salary = salary;
         this.bonus = bonus;
     }
-
+    //getter and setter
     public float getSalary() {
         return salary;
     }

@@ -8,7 +8,9 @@ public final class CommisionBasedPartTime extends PartTime implements IPrintable
 
 
     // create variables for stroing values
+
     int commisionPercentage;
+
     // constructor to input all values
 
 
@@ -49,7 +51,7 @@ public final class CommisionBasedPartTime extends PartTime implements IPrintable
 
         System.out.println("Rate: " + this.getRate() + "$ per hour");
         System.out.println("Hours Worked: " + this.getHoursWorked());
-
+        // try and catch to restrict percentage
         try{
             if(commisionPercentage<10)
             {
